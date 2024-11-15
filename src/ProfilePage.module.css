@@ -1,0 +1,98 @@
+.profileContainer {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 86px 90px;
+}
+
+.profileInfo {
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 441px;
+}
+
+.profileName {
+  color: #fff;
+  font: 800 52px Inter, sans-serif;
+}
+
+.statusIndicator {
+  background-color: #ff4800;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  margin-top: 28px;
+}
+
+.profileDetails {
+  margin-top: 28px;
+}
+
+.jobTitle,
+.company,
+.location {
+  color: #fff;
+  font: 300 25px Inter, sans-serif;
+  margin-top: 28px;
+}
+
+.sectionTitle {
+  color: #fff;
+  margin-top: 28px;
+  font: 500 30px Inter, sans-serif;
+}
+
+.aboutText {
+  color: #fff;
+  margin-top: 28px;
+  font: 300 20px Inter, sans-serif;
+}
+
+.profileIcon {
+  width: 42px;
+  height: 42px;
+  margin-top: 28px;
+}
+
+.profileImages {
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 376px;
+}
+
+.profileImage {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.profileImage:not(:first-child) {
+  margin-top: 28px;
+}
+
+@media (max-width: 991px) {
+  .profileContainer {
+    padding: 0 20px;
+  }
+
+  .profileInfo,
+  .profileImages {
+    max-width: 100%;
+  }
+
+  .profileName {
+    font-size: 40px;
+  }
+
+  .aboutText {
+    max-width: 100%;
+  }
+}
